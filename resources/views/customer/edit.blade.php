@@ -34,14 +34,14 @@
             <div class="heading">
                 <h1 dir="rtl"><i class="fas fa-user-friends"></i> چاککردنی موشتەری</h1>
             </div>
-            <div class="adding" dir="rtl">
+            <div class="adding">
                 {{-- The Form --}}
                 <form action="{{ route('customer.update', ['customer' => $customer->id]) }}" method="POST"
                     class="franceborder">
                     @csrf
                     @method('PUT')
                     <div class="input-form">
-                        <label for="cust-name-1">ناوی موشتەری:</label>
+                        <label for="cust-name-1" >ناوی موشتەری:</label>
                         <input type="text" id="cust-name-1" name="customerName"
                             value="{{ old('customerName', optional($customer ?? null)->customerName) }}">
                     </div>
@@ -49,14 +49,14 @@
                         <div id="error">{{ $message }}</div>
                     @enderror
                     <div class="input-form">
-                        <label for="phone-num-1">  ژمارەی مۆبایل: </label>
+                        <label for="phone-num-1" >  ژمارەی مۆبایل: </label>
                         <input type="text" id="phone-num-1" name="mobileNumber"
                             value="{{ old('mobileNumber', optional($customer ?? null)->mobileNumber) }}">
                     </div>
                     @error('mobileNumber')
                         <div id="error">{{ $message }}</div>
                     @enderror
-                    <div class="buttons">
+                    <div class="buttons" >
                         <button class="form-btn submit-btn">ناردن</button>
                     </div>
                 </form>

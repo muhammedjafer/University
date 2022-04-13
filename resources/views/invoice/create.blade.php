@@ -33,7 +33,7 @@
             <div class=" heading">
                 <h1 dir="rtl"><i class="fas fa-file-invoice"></i> زیادکردنی وەسڵ</h1>
             </div>
-            <div class="adding" dir="rtl" style="margin-bottom: 134px;">
+            <div class="adding" style="margin-bottom: 134px;">
                 {{-- The Form --}}
                 <form action="{{ route('invoice.store') }}" method="POST" class="franceborder">
                     @csrf

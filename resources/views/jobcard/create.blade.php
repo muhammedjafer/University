@@ -35,7 +35,7 @@
             </div>
             <div class="adding">
                 {{-- The Form --}}
-                <form action="{{ route('jobcard.store') }}" method="POST" class="franceborder" dir="rtl">
+                <form action="{{ route('jobcard.store') }}" method="POST" class="franceborder">
                     @csrf
                     <div class="input-form">
                         <label for="cust-name-1">ناوی موشتەری: </label>

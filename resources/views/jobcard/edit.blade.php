@@ -35,7 +35,7 @@
             <div class="adding">
                 {{-- The Form --}}
                 <form action="{{ route('jobcard.update', ['jobcard' => $jobcard->id]) }}" method="POST"
-                    class="franceborder" dir="rtl">
+                    class="franceborder">
                     @csrf
                     @method('PUT')
                     <div class="input-form">

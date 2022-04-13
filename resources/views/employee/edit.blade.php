@@ -37,7 +37,7 @@
             <div class="adding" >
                 {{-- The Form --}}
                 <form action="{{ route('employee.update', ['employee' => $employee->id]) }}" method="POST"
-                    class="franceborder" dir="rtl">
+                    class="franceborder">
                     @csrf
                     @method('PUT')
                     <div class="input-form">

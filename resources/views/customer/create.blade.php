@@ -34,7 +34,7 @@
             <div class="heading">
                 <h1 dir="rtl"><i class="fas fa-user-friends"><span>زیادکردنی موشتەری</span></i></h1>
             </div>
-            <div class="adding" dir="rtl">
+            <div class="adding">
                 {{-- The Form --}}
                 <form action="{{ route('customer.store') }}" method="POST" class="franceborder">
                     @csrf

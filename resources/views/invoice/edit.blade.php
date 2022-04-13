@@ -36,7 +36,7 @@
             <div class="adding">
                 {{-- The Form --}}
                 <form action="{{ route('invoice.update', ['invoice' => $invoice->id]) }}" method="POST"
-                    class="franceborder" dir="rtl">
+                    class="franceborder">
                     @csrf
                     @method('PUT')
                     <div class="input-form">
