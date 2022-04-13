@@ -109,7 +109,7 @@ body {
 
 .main {
     max-width: 100%;
-    margin-left: var(--sidebar-size);
+    
 }
 
 .btn {
@@ -303,9 +303,12 @@ a {
 
 .heading {
     background-color: var(--heading-color);
-    width: 70vw;
+    width: 100vw;
     padding: 2rem;
     border-radius: 0.4rem;
+    position: relative;
+    right: 29rem;
+    
 }
 
 .heading h1 {
@@ -318,7 +321,7 @@ a {
     content: "";
     position: absolute;
     bottom: -1.7rem;
-    left: 42vw;
+    left: 72vw;
     background-color: #444;
     width: 50rem;
     height: 0.3rem;

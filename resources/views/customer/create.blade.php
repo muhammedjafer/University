@@ -23,6 +23,18 @@
 
         }
 
+        @font-face {
+            font-family: "NRT-Reg";
+            src: url("NRT-Reg.eot");
+            /* IE9 Compat Modes */
+            src: url("NRT-Reg.eot?#iefix") format("embedded-opentype");
+                /* IE6-IE8 */
+            /* Modern Browsers */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
         * {
             font-family: 'NRT-Reg';
             letter-spacing: 0.2rem;
@@ -46,7 +58,7 @@
                         <div id="error">{{ $message }}</div>
                     @enderror
                     <div class="input-form">
-                        <label for="phone-num-1">  ژمارەی مۆبایل:</label>
+                        <label for="phone-num-1"> ژمارەی مۆبایل:</label>
                         <input type="text" id="phone-num-1" name="mobileNumber">
                     </div>
                     @error('mobileNumber')

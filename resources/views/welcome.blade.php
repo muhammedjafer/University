@@ -16,8 +16,8 @@
 
     <section class="main">
         <div class="dashboard-container">
-            <div class="heading">
-                <h1 dir="rtl"><i class="fas fa-chart-bar"></i><span style="padding: 8px;"> پەڕەی سەرەکی</span></h1>
+            <div class="heading" dir="rtl" style="margin-right: -29rem;">
+                <h1><i class="fas fa-chart-bar"></i><span style="padding: 8px;"> پەڕەی سەرەکی</span></h1>
             </div>
             <div class="boxes">
                 <div class="box-content">
