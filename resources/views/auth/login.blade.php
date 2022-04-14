@@ -38,7 +38,7 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="row mb-0">
+                        <div class="row mb-0" dir="rtl" style="position: relative; right: 3rem;">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     <span class="span">داخل بوون</span>

@@ -59,6 +59,22 @@
             }
         }
 
+        #hhh a span {
+            transition: all 0.3s;
+        }
+
+        #hhh a span:hover {
+            color: rgb(160, 157, 157);
+        }
+
+        #mj {
+            transition: all 0.3s;
+        }
+
+        #mj:hover {
+            color: rgb(160, 157, 157);
+        }
+
     </style>
 </head>
 
@@ -67,7 +83,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <span class="span">پەڕەی سەرەکی</span>
+                    <span class="span" id="mj">پەڕەی سەرەکی</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -86,13 +102,13 @@
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
-                                <li class="nav-item">
+                                <li class="nav-item" id="hhh">
                                     <a class="nav-link" href="{{ route('login') }}"><span class="span">داخل بوون</span></a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
-                                <li class="nav-item">
+                                <li class="nav-item" id="hhh">
                                     <a class="nav-link" href="{{ route('register') }}"><span class="span">تۆمارکردن</span></a>
                                 </li>
                             @endif
