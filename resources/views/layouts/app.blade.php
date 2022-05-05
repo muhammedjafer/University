@@ -87,7 +87,7 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}" style="transition: all 0.4s">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -98,7 +98,7 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto" dir="rtl" style="padding: 0.6rem;">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
