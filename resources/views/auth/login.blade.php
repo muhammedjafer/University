@@ -10,9 +10,8 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end" style="margin-left: -122px"><span class="span">ئیمێڵ</span></label>
+                        <div class="row mb-3" dir="rtl">
+                            <label for="email" class="col-md-4 col-form-label text-md-end" style="margin-left: -22px"><span class="span">ئیمێڵ</span></label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -25,8 +24,8 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end" style="margin-left: -122px"><span class="span">ژمارەی نهێنی</span></label>
+                        <div class="row mb-3" dir="rtl">
+                            <label for="password" class="col-md-4 col-form-label text-md-end" style="margin-left: -22px"><span class="span">ژمارەی نهێنی</span></label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -38,8 +37,8 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="row mb-0" dir="rtl" style="position: relative; right: 3rem;">
-                            <div class="col-md-8 offset-md-4">
+                        <div class="row mb-0">
+                            <div class="col-md-8 offset-md-1">
                                 <button type="submit" class="btn btn-primary">
                                     <span class="span">داخل بوون</span>
                                 </button>
