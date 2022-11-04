@@ -398,20 +398,6 @@ a {
     font-size: 2.6rem;
 }
 
-.view-data .line {
-    position: relative;
-}
-
-.view-data .line::after {
-    content: "";
-    position: absolute;
-    top: 1.3rem;
-    right: 48rem;
-    background-color: #444;
-    height: 27rem;
-    width: 0.3rem;
-}
-
 
 /* Dashboard Design end */
 

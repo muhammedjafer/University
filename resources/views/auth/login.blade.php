@@ -1,13 +1,20 @@
 @extends('layouts.app')
 
+<style>
+    #career {
+        position: relative;
+        right: 52%
+    }
+</style>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center" >
         <div class="col-md-8">
             <div class="card" style="background-color: rgb(90, 90, 90); color: white;">
-                <div class="card-header" ><span class="span">داخل بوون</span></div>
+                <div class="card-header" dir="rtl" style="background-color: rgb(66, 66, 66); color: white;"><span class="span">چوونە ژوورەوە</span></div>
 
-                <div class="card-body">
+                <div class="card-body" dir="rtl">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="row mb-3">
@@ -39,8 +46,8 @@
                         </div>
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-8">
-                                <button type="submit" class="btn btn-primary">
-                                    <span class="span">داخل بوون</span>
+                                <button type="submit" class="btn btn-primary" id="career">
+                                    <span class="span">چوونە ژوورەوە</span>
                                 </button>
 
                             </div>
